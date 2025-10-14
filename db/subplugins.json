@@ -1,0 +1,10 @@
+{
+    "subplugintypes": {
+        "callforpaperfield": "field",
+        "callforpaperpreset": "preset"
+    },
+    "plugintypes": {
+        "callforpaperfield": "mod/callforpaper/field",
+        "callforpaperpreset": "mod/callforpaper/preset"
+    }
+}

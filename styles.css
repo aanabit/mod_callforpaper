@@ -1,0 +1,207 @@
+.path-mod-callforpaper-field .c0,
+#page-mod-callforpaper-view #sortsearch .c0 {
+    text-align: right;
+}
+
+#page-mod-callforpaper-view .approve img.icon {
+    width: 34px;
+    height: 34px;
+}
+
+.path-mod-callforpaper #id_entrieshdr div .alert.alert-danger {
+    margin-bottom: 2rem;
+}
+
+#page-mod-callforpaper-view img.list_picture {
+    border: 0;
+}
+
+#page-mod-callforpaper-view div.search_none {
+    display: none;
+}
+
+#page-mod-callforpaper-view div.search_inline,
+#page-mod-callforpaper-view form#latlongfieldbrowse {
+    display: inline;
+}
+
+#page-mod-callforpaper-view div#callforpaper_adv_form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#page-mod-callforpaper-edit .basefieldinput {
+    width: 300px;
+}
+
+/** Styles for preset.php **/
+#page-mod-callforpaper-preset .presetmapping table {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#page-mod-callforpaper-preset .overwritesettings {
+    margin-bottom: 1em;
+}
+
+#page-mod-callforpaper-preset table.presets {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/** Styles for the search form **/
+#page-mod-callforpaper-view .callforpaperpreferences label {
+    display: inline-block;
+}
+
+/** Styles for field.php **/
+.path-mod-callforpaper-field .sortdefault {
+    margin: 1em 0;
+}
+
+.path-mod-callforpaper-field .fieldname,
+.path-mod-callforpaper-field .fielddescription {
+    width: 300px;
+}
+
+.path-mod-callforpaper-field textarea.optionstextarea {
+    width: 300px;
+    height: 150px;
+}
+
+.path-mod-callforpaper-field input.textareafieldsize {
+    width: 50px;
+}
+
+.path-mod-callforpaper-field input.picturefieldsize {
+    width: 70px;
+}
+
+.path-mod-callforpaper .action-icon img.portfolio-add-icon {
+    margin-left: 0;
+}
+
+/** UI Usability Hacks **/
+#page-mod-callforpaper-export #notice span {
+    padding: 0 10px;
+}
+/*rtl:ignore*/
+#page-mod-callforpaper-edit input[id*="url"] {
+    text-align: left;
+    direction: ltr;
+}
+
+.mod-callforpaper-default-template td {
+    vertical-align: top;
+}
+
+.mod-callforpaper-default-template .template-field {
+    text-align: right;
+}
+
+.mod-callforpaper-default-template .template-token {
+    text-align: left;
+}
+
+.mod-callforpaper-default-template .controls {
+    text-align: center;
+}
+
+.mod-callforpaper-default-template .searchcontrols {
+    text-align: right;
+}
+
+#page-mod-callforpaper-view .notapproved {
+    background-color: #fff3cd;
+    color: #856404;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    gap: 1em;
+}
+
+#page-mod-callforpaper-templates td.save_template,
+#page-mod-callforpaper-templates .template_heading {
+    text-align: center;
+}
+
+#page-mod-callforpaper-templates #availabletags_wrapper {
+    max-width: 250px;
+}
+
+#page-mod-callforpaper-edit .req {
+    cursor: help;
+}
+
+#page-mod-callforpaper-edit .inline-req .req {
+    position: absolute;
+}
+
+#page-mod-callforpaper-edit .inline-req {
+    text-align: left;
+}
+
+#page-mod-callforpaper-edit .callforpapertagcontrol {
+    padding-left: 10px;
+}
+
+.preset_action_menu .dropdown-toggle::after,
+.entry-actionsmenu .dropdown-toggle::after,
+.fields-actions .dropdown-toggle::after {
+    display: none;
+}
+
+.defaulttemplate-single-body img.list_picture {
+    max-width: 100%;
+}
+
+.defaulttemplate-list-body img.list_picture {
+    max-width: 100%;
+}
+
+/* Date information displayed in templates/presets */
+.callforpaper-timeinfo {
+    color: var(–gray);
+}
+
+/* Legacy icons */
+.callforpapericon,
+.portfolio-add-icon {
+    color: var(--dark);
+}
+
+/* Preset preview styles */
+#page-mod-callforpaper-preset .nopreview {
+    border: 1px solid var(--secondary);
+    padding: 0.2rem;
+    border-radius: 5px;
+}
+/* Disable links and buttons in the preset preview */
+.template-preview-content .preview-disabled,
+.template-preview-content .action-icon,
+.template-preview-content .dropdown-menu a,
+.template-preview-content .callforpaper-field-link,
+.template-preview-content .callforpaper-field-html a,
+.template-preview-content .callforpaper-field-html button {
+    pointer-events: none;
+}
+
+/* Actions menu */
+.presetsactions .dropdown-toggle,
+.presetsactions .dropdown-toggle:hover,
+.presetsactions .show > .btn-secondary.dropdown-toggle,
+.entriesactions .dropdown-toggle,
+.entriesactions .dropdown-toggle:hover,
+.entriesactions .show > .btn-secondary.dropdown-toggle,
+#page-mod-callforpaper-view .whitebutton .btn-secondary,
+#page-mod-callforpaper-preset .whitebutton .btn-secondary,
+#page-mod-callforpaper-field- .whitebutton .btn-secondary,
+#page-mod-callforpaper-templates .whitebutton .btn-secondary {
+    background: white;
+    border-color: var(--bs-primary);
+    color: var(--bs-primary);
+}
+
+#page-mod-callforpaper-preset .table {
+    margin-bottom: 10rem;
+}
