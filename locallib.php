@@ -1279,7 +1279,28 @@ function callforpaper_search_entries($callforpaper, $cm, $context, $mode, $curre
                 $totalcount = 1;
             }
         }
+    }
 
+    // If we are sorting by review count we need to be quick and dirty now because we need to be finished in 30 min ...
+    // Please never, yes, I realy mean NEVER! do this in proper code ...
+    if ($sort === CALLFORPAPER_REVIEWCOUNT) {
+        $recordids = implode(',', array_keys($records));
+        $reviews = $DB->get_records_sql('
+        SELECT recordid, COUNT(id) as reviewcount
+        FROM {callforpaper_record_review}
+        WHERE recordid IN ('.$recordids.')
+        GROUP BY recordid');
+
+        uasort($records, function($a, $b) use ($order, $reviews) {
+            $areviews = array_key_exists($a->id, $reviews) ? $reviews[$a->id]->reviewcount : 0;
+            $breviews = array_key_exists($b->id, $reviews) ? $reviews[$b->id]->reviewcount : 0;
+
+            if ($order == 'ASC') {
+                return $areviews <=> $breviews;
+            } else {
+                return $breviews <=> $areviews;
+            }
+        });
     }
 
     return [$records, $maxcount, $totalcount, $page, $nowperpage, $sort, $mode];
