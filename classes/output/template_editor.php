@@ -111,13 +111,16 @@ class template_editor implements templatable, renderable {
 
         $editor = editors_get_preferred_editor($format);
 
+        $isalisttemplate = in_array($this->templatename, ['listtemplate', 'reviewerlisttemplate']);
+
         // Add editors.
-        if ($this->templatename === 'listtemplate') {
+        if ($isalisttemplate) {
+            $template = $manager->get_template($this->templatename . 'header');
             $template = $manager->get_template('listtemplateheader');
             $result[] = $this->generate_editor_data(
                 $editor,
                 'header',
-                'listtemplateheader',
+                $this->templatename . 'header',
                 $template->get_template_content()
             );
             $maineditorname = 'multientry';
@@ -133,12 +136,12 @@ class template_editor implements templatable, renderable {
             $template->get_template_content()
         );
 
-        if ($this->templatename === 'listtemplate') {
-            $template = $manager->get_template('listtemplatefooter');
+        if ($isalisttemplate) {
+            $template = $manager->get_template($this->templatename . 'footer');
             $result[] = $this->generate_editor_data(
                 $editor,
                 'footer',
-                'listtemplatefooter',
+                $this->templatename . 'footer',
                 $template->get_template_content()
             );
         }
